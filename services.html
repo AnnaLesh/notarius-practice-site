@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги нотариуса | Нотариальная контора Ивановой</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Специфичные стили для страницы услуг */
+        .services-page {
+            padding: 50px 0;
+        }
+        
+        .services-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .services-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 12px 25px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            border-bottom: 3px solid #e74c3c;
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .service-category {
+            margin-bottom: 40px;
+        }
+        
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .service-table th, 
+        .service-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .service-table th {
+            background-color: #f5f5f5;
+            font-weight: 500;
+        }
+        
+        .service-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .service-table .price {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            padding: 25px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .consultation-form {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .services-tabs {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                border-bottom: none;
+                border-left: 3px solid transparent;
+                text-align: left;
+            }
+            
+            .tab-btn.active {
+                border-left: 3px solid #e74c3c;
+                border-bottom: none;
+            }
+            
+            .service-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li class="active"><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="services-page">
+        <div class="container">
+            <div class="services-header">
+                <h1>Наши услуги</h1>
+                <p>Полный спектр нотариальных услуг для физических и юридических лиц</p>
+            </div>
+            
+            <div class="services-tabs">
+                <button class="tab-btn active" data-tab="physical">Для физических лиц</button>
+                <button class="tab-btn" data-tab="legal">Для юридических лиц</button>
+                <button class="tab-btn" data-tab="other">Другие услуги</button>
+            </div>
+            
+            <div id="physical" class="tab-content active">
+                <section class="service-category">
+                    <h2>Недвижимость</h2>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Сроки</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Удостоверение договора купли-продажи</td>
+                                <td>Квартиры, дома, земельные участки</td>
+                                <td>1-2 дня</td>
+                                <td class="price">от 5 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Удостоверение договора дарения</td>
+                                <td>Недвижимого имущества</td>
+                                <td>1 день</td>
+                                <td class="price">от 4 500 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Согласие супруга на сделку</td>
+                                <td>Нотариальное заверение</td>
+                                <td>В день обращения</td>
+                                <td class="price">2 000 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section class="service-category">
+                    <h2>Наследственные дела</h2>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Сроки</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Открытие наследственного дела</td>
+                                <td>Принятие заявления о принятии наследства</td>
+                                <td>В день обращения</td>
+                                <td class="price">1 500 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Свидетельство о праве на наследство</td>
+                                <td>По закону или по завещанию</td>
+                                <td>От 5 дней</td>
+                                <td class="price">от 3 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Завещание</td>
+                                <td>Составление и удостоверение</td>
+                                <td>В день обращения</td>
+                                <td class="price">2 500 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            
+            <div id="legal" class="tab-content">
+                <section class="service-category">
+                    <h2>Корпоративные документы</h2>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Сроки</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Удостоверение решений собраний</td>
+                                <td>Участников/акционеров общества</td>
+                                <td>1-2 дня</td>
+                                <td class="price">от 10 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Заверение подписей</td>
+                                <td>На документах юридических лиц</td>
+                                <td>В день обращения</td>
+                                <td class="price">1 500 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Доверенности для юрлиц</td>
+                                <td>На представление интересов</td>
+                                <td>В день обращения</td>
+                                <td class="price">от 3 000 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            
+            <div id="other" class="tab-content">
+                <section class="service-category">
+                    <h2>Международные документы</h2>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Сроки</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Апостиль</td>
+                                <td>Легализация документов</td>
+                                <td>3-5 дней</td>
+                                <td class="price">от 5 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Перевод и заверение</td>
+                                <td>Документов для заграницы</td>
+                                <td>2-3 дня</td>
+                                <td class="price">от 3 500 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            
+            <div class="service-features">
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Конфиденциальность</h3>
+                    <p>Все ваши данные защищены нотариальной тайной и не подлежат разглашению</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Оперативность</h3>
+                    <p>Большинство услуг оказываем в день обращения без лишних ожиданий</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Надежность</h3>
+                    <p>Все документы оформляются в строгом соответствии с законодательством</p>
+                </div>
+            </div>
+            
+            <div class="consultation-form">
+                <h2>Нужна консультация?</h2>
+                <p>Оставьте заявку, и наш специалист свяжется с вами для уточнения деталей</p>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option>Выберите услугу</option>
+                            <option>Недвижимость</option>
+                            <option>Наследственные дела</option>
+                            <option>Доверенности</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo-footer.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Табы на странице услуг
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Удаляем активный класс у всех кнопок и контента
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Добавляем активный класс текущей кнопке и соответствующему контенту
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Обработка формы консультации
+        const consultForm = document.querySelector('.consultation-form form');
+        if (consultForm) {
+            consultForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+                this.reset();
+            });
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости нотариальной конторы | Нотариус Иванова</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Специфичные стили для страницы новостей */
+        .news-page {
+            padding: 40px 0;
+        }
+        
+        .news-archive {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .news-article {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 30px;
+        }
+        
+        .news-article:last-child {
+            border-bottom: none;
+        }
+        
+        .news-header {
+            margin-bottom: 20px;
+        }
+        
+        .news-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .news-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .news-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .news-content {
+            line-height: 1.7;
+        }
+        
+        .news-content p {
+            margin-bottom: 15px;
+        }
+        
+        .news-content ul, .news-content ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .back-to-news {
+            display: inline-block;
+            margin-top: 30px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .news-title {
+                font-size: 1.5rem;
+            }
+            
+            .news-page {
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li class="active"><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="news-page">
+        <div class="container">
+            <h1>Новости нотариальной конторы</h1>
+            
+            <div class="news-archive">
+                <!-- Новость 1 -->
+                <article class="news-article" id="news1">
+                    <div class="news-header">
+                        <h2 class="news-title">Изменения в нотариальном законодательстве с 1 января 2024 года</h2>
+                        <div class="news-meta">
+                            <time datetime="2023-12-15">15 декабря 2023</time> | Автор: Иванова А.И.
+                        </div>
+                    </div>
+                    
+                    <img src="img/news1.jpg" alt="Изменения в законодательстве" class="news-image">
+                    
+                    <div class="news-content">
+                        <p>С 1 января 2024 года вступают в силу важные изменения в Федеральный закон "О нотариате и нотариальной деятельности". Основные нововведения:</p>
+                        
+                        <ul>
+                            <li>Упрощение процедуры заверения доверенностей на автомобили</li>
+                            <li>Введение электронного реестра нотариальных действий</li>
+                            <li>Новые требования к оформлению согласий на выезд детей за границу</li>
+                            <li>Возможность дистанционного заверения документов для граждан с ограниченными возможностями</li>
+                        </ul>
+                        
+                        <p>Наша нотариальная контора полностью готова к работе по новым правилам. Все нотариусы прошли дополнительное обучение, а техническая база обновлена в соответствии с новыми требованиями.</p>
+                        
+                        <p>Для получения подробной консультации о том, как новые изменения могут повлиять на ваши документы, записывайтесь на прием по телефону +7 (495) 123-45-67 или через форму обратной связи на нашем сайте.</p>
+                    </div>
+                </article>
+                
+                <!-- Новость 2 -->
+                <article class="news-article" id="news2">
+                    <div class="news-header">
+                        <h2 class="news-title">Новые услуги в нашем офисе: международные доверенности</h2>
+                        <div class="news-meta">
+                            <time datetime="2023-11-28">28 ноября 2023</time> | Автор: Петров В.С.
+                        </div>
+                    </div>
+                    
+                    <img src="img/news1.jpg" alt="Международные доверенности" class="news-image">
+                    
+                    <div class="news-content">
+                        <p>Рады сообщить, что теперь в нашей нотариальной конторе вы можете оформить все виды международных доверенностей:</p>
+                        
+                        <ol>
+                            <li>Доверенности на управление имуществом за границей</li>
+                            <li>Доверенности на ведение бизнеса в других странах</li>
+                            <li>Доверенности на представление интересов в международных судах</li>
+                            <li>Доверенности на сопровождение детей при поездках за рубеж</li>
+                        </ol>
+                        
+                        <p>Все документы оформляются с учетом требований Гаагской конвенции 1961 года (апостиль) и заверяются в соответствии с международными стандартами.</p>
+                        
+                        <p>Особенности наших международных доверенностей:</p>
+                        
+                        <table>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Срок оформления</th>
+                                <th>Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Доверенность с апостилем</td>
+                                <td>1-2 рабочих дня</td>
+                                <td>от 5 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Перевод и нотариальное заверение</td>
+                                <td>2-3 рабочих дня</td>
+                                <td>от 3 000 руб.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+                
+                <!-- Новость 3 -->
+                <article class="news-article" id="news3">
+                    <div class="news-header">
+                        <h2 class="news-title">Новогодняя акция для наших клиентов</h2>
+                        <div class="news-meta">
+                            <time datetime="2023-11-15">15 ноября 2023</time> | Автор: Сидорова О.В.
+                        </div>
+                    </div>
+                    
+                    <img src="img/news1.jpg" alt="Новогодняя акция" class="news-image">
+                    
+                    <div class="news-content">
+                        <p>В преддверии Нового года наша нотариальная контора объявляет специальную акцию:</p>
+                        
+                        <p><strong>С 1 по 31 декабря 2023 года скидка 15%</strong> на следующие услуги:</p>
+                        
+                        <ul>
+                            <li>Заверение договоров купли-продажи недвижимости</li>
+                            <li>Оформление доверенностей</li>
+                            <li>Заверение копий документов (при объеме от 20 страниц)</li>
+                            <li>Составление и удостоверение согласий на выезд детей</li>
+                        </ul>
+                        
+                        <p>Акция действует для всех клиентов, записавшихся на прием через наш сайт или по телефону +7 (495) 123-45-67 с пометкой "Новогодняя акция".</p>
+                        
+                        <p>Количество участников акции ограничено! Успейте воспользоваться выгодным предложением до конца года.</p>
+                        
+                        <div style="background-color: #fff8e1; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
+                            <p><strong>Важно:</strong> Скидка не суммируется с другими акционными предложениями.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <a href="index.html#news" class="back-to-news">← Вернуться к списку новостей</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo-footer.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

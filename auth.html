@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация | Нотариальная контора Ивановой</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="active"><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-form-wrapper">
+                    <h2>Вход в личный кабинет</h2>
+                    
+                    <form id="auth-form">
+                        <div class="form-group">
+                            <label for="login">Логин:</label>
+                            <input type="text" id="login" name="login" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn">Войти</button>
+                    </form>
+                    
+                    <div class="auth-links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Регистрация</a>
+                    </div>
+                    
+                    <div class="auth-info">
+                        <h3>Тестовые учетные записи:</h3>
+                        <ul>
+                            <li>Администратор: login - <strong>admin</strong>, password - <strong>admin123</strong></li>
+                            <li>Пользователь: login - <strong>user</strong>, password - <strong>user123</strong></li>
+                            <li>Клиент: login - <strong>client</strong>, password - <strong>client123</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo-footer.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

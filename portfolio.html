@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Метаданные -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотариальная контора Ивановой | Портфолио</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение иконки -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип с ссылкой на главную -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <!-- Главное меню -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li class="active"><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <!-- Баннер страницы -->
+        <section class="page-banner">
+            <div class="container">
+                <h1>Наше портфолио</h1>
+                <p>Примеры наших работ и успешных кейсов</p>
+            </div>
+        </section>
+
+        <!-- Портфолио -->
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="property">Недвижимость</button>
+                    <button class="filter-btn" data-filter="inheritance">Наследство</button>
+                    <button class="filter-btn" data-filter="power-of-attorney">Доверенности</button>
+                    <button class="filter-btn" data-filter="contracts">Договоры</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Работа 1 -->
+                    <div class="portfolio-item" data-category="property">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio1.jpg" alt="Заверение договора купли-продажи">
+                            <div class="portfolio-overlay">
+                                <h3>Заверение договора купли-продажи квартиры</h3>
+                                <p>Комплексное сопровождение сделки с недвижимостью</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 2 -->
+                    <div class="portfolio-item" data-category="inheritance">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio2.jpg" alt="Оформление наследства">
+                            <div class="portfolio-overlay">
+                                <h3>Оформление наследства</h3>
+                                <p>Помощь в оформлении наследства на имущество</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 3 -->
+                    <div class="portfolio-item" data-category="power-of-attorney">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio3.jpg" alt="Международная доверенность">
+                            <div class="portfolio-overlay">
+                                <h3>Международная доверенность</h3>
+                                <p>Оформление доверенности для действий за границей</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 4 -->
+                    <div class="portfolio-item" data-category="contracts">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio4.jpg" alt="Заверение договора займа">
+                            <div class="portfolio-overlay">
+                                <h3>Заверение договора займа</h3>
+                                <p>Юридическое сопровождение денежного займа</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 5 -->
+                    <div class="portfolio-item" data-category="property">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio5.jpg" alt="Сопровождение ипотечной сделки">
+                            <div class="portfolio-overlay">
+                                <h3>Сопровождение ипотечной сделки</h3>
+                                <p>Полный комплекс услуг по оформлению ипотеки</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 6 -->
+                    <div class="portfolio-item" data-category="inheritance">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio6.jpg" alt="Вступление в наследство">
+                            <div class="portfolio-overlay">
+                                <h3>Вступление в наследство</h3>
+                                <p>Помощь в сложном случае с наследством</p>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы клиентов -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Отзывы наших клиентов</h2>
+                
+                <div class="testimonials-slider">
+                    <!-- Отзыв 1 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Обратились в нотариальную контору Ивановой для оформления договора купли-продажи квартиры. Все было сделано быстро, профессионально и с вниманием к деталям. Особенно порадовало, что нотариус подробно объяснила все нюансы сделки."</p>
+                            <div class="testimonial-author">
+                                <img src="img/client1.jpg" alt="Александра Петрова">
+                                <div>
+                                    <h4>Александр Петров</h4>
+                                    <p>Клиент</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 2 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Благодарю за помощь в оформлении наследства. Ситуация была непростая, но специалисты конторы проявили высокий профессионализм и помогли решить все вопросы в кратчайшие сроки. Рекомендую!"</p>
+                            <div class="testimonial-author">
+                                <img src="img/client2.jpg" alt="Елена Смирнова">
+                                <div>
+                                    <h4>Елена Смирнова</h4>
+                                    <p>Клиент</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 3 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Требовалось срочно оформить доверенность для действий за границей. В нотариальной конторе Ивановой мне помогли буквально за один день, причем все документы были подготовлены безупречно. Очень доволен сервисом!"</p>
+                            <div class="testimonial-author">
+                                <img src="img/client3.jpg" alt="Дмитрий Иванов">
+                                <div>
+                                    <h4>Дмитрий Иванов</h4>
+                                    <p>Клиент</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="feedback-form">
+            <div class="container">
+                <h2>Хотите обсудить ваш проект?</h2>
+                <p>Оставьте заявку, и мы свяжемся с вами для консультации</p>
+                
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Интересующая услуга:</label>
+                        <select id="service" name="service">
+                            <option value="property">Недвижимость</option>
+                            <option value="inheritance">Наследство</option>
+                            <option value="power-of-attorney">Доверенности</option>
+                            <option value="contracts">Договоры</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

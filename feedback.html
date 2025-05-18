@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотариальная контора Ивановой | Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li class="active"><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-banner">
+            <div class="container">
+                <h1>Обратная связь</h1>
+                <p>Мы всегда рады вашим вопросам и предложениям</p>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback-wrapper">
+                    <div class="feedback-form">
+                        <h2>Напишите нам</h2>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Тема обращения *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="question">Вопрос</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="appointment">Запись на прием</option>
+                                    <option value="feedback">Отзыв</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group consent">
+                                <input type="checkbox" id="consent" required checked>
+                                <label for="consent">Я согласен на обработку персональных данных</label>
+                            </div>
+                            
+                            <button type="submit" class="btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                    
+                    <div class="feedback-info">
+                        <h2>Контактная информация</h2>
+                        <div class="contact-item">
+                            <h3>Адрес:</h3>
+                            <p>г. Москва, ул. Нотариальная, д. 15, офис 42</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Телефон:</h3>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Email:</h3>
+                            <p>info@notarius-ivanova.ru</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Часы работы:</h3>
+                            <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 15:00<br>Вс: выходной</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="feedback.html">Обратная связь</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

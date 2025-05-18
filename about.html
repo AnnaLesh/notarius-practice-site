@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании | Нотариальная контора Ивановой</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Специфичные стили для страницы "О компании" */
+        .about-page {
+            padding: 50px 0;
+        }
+        
+        .about-section {
+            margin-bottom: 50px;
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .team-member {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-info h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .member-position {
+            color: #e74c3c;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .achievements-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .achievement-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2c3e50;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="active"><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="about-page">
+        <div class="container">
+            <div class="about-header">
+                <h1>О нашей нотариальной конторе</h1>
+                <p>Профессионализм, надежность и индивидуальный подход с 2005 года</p>
+            </div>
+            
+            <section class="about-section">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="img/office.jpg" alt="Наш офис">
+                    </div>
+                    <div class="about-text">
+                        <h2>Наша история</h2>
+                        <p>Нотариальная контора Ивановой была основана в 2005 году и за это время зарекомендовала себя как надежного и компетентного партнера в решении самых сложных нотариальных вопросов.</p>
+                        <p>Начиная с небольшого кабинета в центре Москвы, сегодня мы располагаем современным офисом, оснащенным всем необходимым для оперативного и качественного оказания нотариальных услуг.</p>
+                        <p>За годы работы мы помогли более чем 15 000 клиентам, среди которых как частные лица, так и крупные бизнес-структуры.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-section">
+                <h2 class="section-title">Наша команда</h2>
+                <p>В нашей команде работают высококвалифицированные специалисты с многолетним опытом работы в нотариальной сфере.</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="img/team1.jpg" alt="Иванова А.И.">
+                        <div class="member-info">
+                            <h3>Иванова Анна Ивановна</h3>
+                            <p class="member-position">Главный нотариус, основатель</p>
+                            <p>Опыт работы: 18 лет. Специализация: недвижимость, наследственные дела.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="img/team2.jpg" alt="Петров В.С.">
+                        <div class="member-info">
+                            <h3>Петров Владимир Сергеевич</h3>
+                            <p class="member-position">Нотариус</p>
+                            <p>Опыт работы: 12 лет. Специализация: корпоративное право, международные документы.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="img/team3.jpg" alt="Сидорова О.В.">
+                        <div class="member-info">
+                            <h3>Сидорова Ольга Владимировна</h3>
+                            <p class="member-position">Нотариус</p>
+                            <p>Опыт работы: 9 лет. Специализация: семейное право, доверенности.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="img/team4.jpg" alt="Кузнецова Е.А.">
+                        <div class="member-info">
+                            <h3>Кузнецова Елена Алексеевна</h3>
+                            <p class="member-position">Юрист-консультант</p>
+                            <p>Опыт работы: 7 лет. Специализация: подготовка документов, правовые заключения.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-section">
+                <h2 class="section-title">Наши достижения</h2>
+                <p>За годы работы мы получили признание как со стороны клиентов, так и профессионального сообщества:</p>
+                
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <h3>Лучшая нотариальная контора 2022</h3>
+                        <p>По версии рейтинга "Нотариус года" в номинации "Качество обслуживания клиентов"</p>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <h3>Внедрение электронного документооборота</h3>
+                        <p>Первыми в регионе внедрили систему электронного нотариата в 2018 году</p>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <h3>Более 500 благодарностей</h3>
+                        <p>От клиентов за профессиональный подход и решение сложных вопросов</p>
+                    </div>
+                    
+                   
+                </div>
+            </section>
+            
+            <section class="about-section">
+                <div class="about-content reverse">
+                    <div class="about-text">
+                        <h2>Наши принципы работы</h2>
+                        <ul>
+                            <li><strong>Конфиденциальность</strong> - гарантия сохранности ваших данных</li>
+                            <li><strong>Профессионализм</strong> - все нотариусы с большим опытом работы</li>
+                            <li><strong>Скорость</strong> - большинство услуг оказываем в день обращения</li>
+                            <li><strong>Доступность</strong> - понятные цены и удобное расположение офиса</li>
+                            <li><strong>Индивидуальный подход</strong> - решение нестандартных ситуаций</li>
+                        </ul>
+                        <a href="services.html" class="btn">Наши услуги</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/princip.jpg" alt="Наши принципы">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

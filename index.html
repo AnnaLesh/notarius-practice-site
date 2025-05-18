@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Метаданные -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотариальная контора Ивановой | Главная</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение иконки -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип с ссылкой на главную -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                <span>Нотариальная контора Ивановой</span>
+            </a>
+            
+            <!-- Главное меню -->
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="auth.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <!-- Баннер -->
+        <section class="banner">
+            <div class="container">
+                <h1>Профессиональные нотариальные услуги</h1>
+                <p>Официальное заверение документов, консультации, представительство</p>
+                <a href="services.html" class="btn">Наши услуги</a>
+            </div>
+        </section>
+
+        <!-- Приветствие -->
+        <section class="welcome">
+            <div class="container">
+                <h2>Добро пожаловать в нашу нотариальную контору</h2>
+                <p>Мы предлагаем полный спектр нотариальных услуг с гарантией законности и конфиденциальности. Наши специалисты имеют многолетний опыт работы и всегда готовы помочь вам в решении любых вопросов, связанных с заверением документов.</p>
+            </div>
+        </section>
+
+        <!-- О компании (кратко) -->
+        <section class="about-short">
+            <div class="container">
+                <h2>О нашей компании</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Нотариальная контора Ивановой работает на рынке юридических услуг с 2005 года. За это время мы помогли тысячам клиентов в оформлении документов, заверении сделок и решении других нотариальных вопросов.</p>
+                        <a href="about.html" class="btn">Подробнее о нас</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/office.jpg" alt="Наш офис">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новостная лента -->
+        <section class="news-preview">
+            <div class="container">
+                <h2>Последние новости</h2>
+                <div class="news-grid">
+                    <!-- Новость 1 -->
+                    <article class="news-item">
+                        <img src="img/news1.jpg" alt="Новость 1">
+                        <h3>Изменения в документах</h3>
+                        <p class="news-date">15.05.2023</p>
+                        <p>С 1 июня вступают в силу изменения в законодательстве, касающиеся заверения доверенностей...</p>
+                        <a href="news.html#news1" class="btn">Читать далее</a>
+                    </article>
+                    
+                    <!-- Новость 2 -->
+                    <article class="news-item">
+                        <img src="img/news1.jpg" alt="Новость 2">
+                        <h3>Новые услуги в нашем офисе</h3>
+                        <p class="news-date">10.05.2023</p>
+                        <p>Теперь в нашей нотариальной конторе вы можете оформить международную доверенность для поездки за границу...</p>
+                        <a href="news.html#news2" class="btn">Читать далее</a>
+                    </article>
+                    
+                    <!-- Новость 3 -->
+                    <article class="news-item">
+                        <img src="img/news1.jpg" alt="Новость 3">
+                        <h3>Акция для новых клиентов</h3>
+                        <p class="news-date">05.05.2023</p>
+                        <p>В мае для новых клиентов действует скидка 15% на заверение договоров купли-продажи недвижимости...</p>
+                        <a href="news.html#news3" class="btn">Читать далее</a>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="news.html" class="btn">Все новости</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="feedback-form">
+            <div class="container">
+                <h2>Остались вопросы?</h2>
+                <p>Заполните форму обратной связи, и наш специалист свяжется с вами в ближайшее время</p>
+                
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ваш вопрос:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Контактные данные -->
+        <section class="contacts-preview">
+            <div class="container">
+                <h2>Наши контакты</h2>
+                <div class="contacts-grid">
+                    <div class="contact-item">
+                        <h3>Адрес:</h3>
+                        <p>г. Москва, ул. Нотариальная, д. 15, офис 42</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Телефон:</h3>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email:</h3>
+                        <p>info@notarius-ivanova.ru</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Часы работы:</h3>
+                        <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 15:00<br>Вс: выходной</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="contacts.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Логотип нотариальной конторы">
+                    </a>
+                    <p>Нотариальная контора Ивановой</p>
+                </div>
+                
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Нотариальная, д. 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@notarius-ivanova.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Нотариальная контора Ивановой, 2023. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
