@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет | Нотариус</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .user-dashboard {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .user-info {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Общая шапка -->
+        <nav>
+            <a href="../index.html" class="logo">Нотариус</a>
+            <ul class="menu">
+                <li><a href="#" id="logout">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="user-dashboard">
+            <div class="user-info">
+                <h2>Добро пожаловать, <span id="username"></span>!</h2>
+                <p>Ваш статус: <span id="user-role"></span></p>
+            </div>
+            
+            <h2>Доступные функции:</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Мои документы</h3>
+                    <p>Просмотр заверенных документов</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Запись на прием</h3>
+                    <p>Онлайн запись к нотариусу</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Общий подвал -->
+    </footer>
+
+    <script>
+        // Проверка авторизации
+        
+        
+        // Отображение информации о пользователе
+        document.getElementById('username').textContent = localStorage.getItem('username');
+        document.getElementById('user-role').textContent = 
+            localStorage.getItem('role') === 'admin' ? 'Администратор' : 
+            localStorage.getItem('role') === 'client' ? 'Клиент' : 'Пользователь';
+        
+        // Выход из системы
+        document.getElementById('logout').addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.removeItem('auth');
+            localStorage.removeItem('username');
+            localStorage.removeItem('role');
+            window.location.href = '../auth.html';
+        });
+    </script>
+</body>
+</html>

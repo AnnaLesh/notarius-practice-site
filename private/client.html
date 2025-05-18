@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет клиента | Нотариус</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .client-area {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .client-info {
+            background: #e8f5e9;
+            padding: 20px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        .client-docs {
+            margin-top: 30px;
+        }
+        .doc-list {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .doc-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .doc-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Общая шапка -->
+        <nav>
+            <a href="../index.html" class="logo">Нотариус</a>
+            <ul class="menu">
+                <li><a href="#" id="logout">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="client-area">
+            <div class="client-info">
+                <h2>Личный кабинет клиента</h2>
+                <p>Добро пожаловать, <strong id="client-name"></strong>!</p>
+            </div>
+            
+            <div class="client-docs">
+                <h2>Ваши документы</h2>
+                <div class="doc-list">
+                    <div class="doc-item">
+                        <span>Доверенность №12345</span>
+                        <span>15.10.2023</span>
+                    </div>
+                    <div class="doc-item">
+                        <span>Согласие на выезд ребенка</span>
+                        <span>10.09.2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="client-actions" style="margin-top: 30px;">
+                <button class="btn">Записаться на прием</button>
+                <button class="btn">Заказать документ</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Общий подвал -->
+    </footer>
+
+    <script>
+        
+        
+        // Отображение информации
+        document.getElementById('client-name').textContent = localStorage.getItem('username');
+        
+        // Выход из системы
+        document.getElementById('logout').addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.removeItem('auth');
+            localStorage.removeItem('username');
+            localStorage.removeItem('role');
+            window.location.href = '../auth.html';
+        });
+    </script>
+</body>
+</html>
